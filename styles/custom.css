@@ -1,0 +1,8 @@
+/* 自定义组件样式 */
+.nav-link {
+    @apply text-gray-700 font-bold hover:text-blue-500 transition-colors;
+}
+
+.article-card {
+    @apply mb-8 p-4 border border-gray-200 rounded-lg hover:shadow-md transition-shadow;
+} 
