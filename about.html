@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>关于 GitHub Pages - 我的博客</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- 配置 Tailwind -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#2c3e50',
+                        secondary: '#34495e',
+                        accent: '#3498db',
+                    },
+                    fontFamily: {
+                        sans: ['Microsoft YaHei', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans text-gray-800 bg-gray-50">
+    <header class="border-b border-gray-200">
+        <div class="container mx-auto px-4 py-8">
+            <h1 class="text-4xl font-bold text-primary mb-6">关于 GitHub Pages</h1>
+            <nav>
+                <ul class="flex space-x-8">
+                    <li><a href="index.html" class="text-gray-700 font-bold hover:text-blue-500 transition-colors">首页</a></li>
+                    <li><a href="posts.html" class="text-gray-700 font-bold hover:text-blue-500 transition-colors">文章</a></li>
+                    <li><a href="about.html" class="text-gray-700 font-bold hover:text-blue-500 transition-colors">关于</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-8">
+        <article class="max-w-3xl mx-auto space-y-8">
+            <section class="bg-white p-6 rounded-lg shadow-sm">
+                <h2 class="text-2xl font-bold text-primary mb-4">什么是 GitHub Pages？</h2>
+                <p class="text-gray-600 leading-relaxed">
+                    GitHub Pages 是 GitHub 提供的一项免费的静态网站托管服务。它直接从 GitHub 上的仓库获取 HTML、CSS 和 JavaScript 文件，
+                    通过构建过程运行这些文件，然后发布网站。它是展示开源项目、托管博客或创建作品集的理想选择。
+                </p>
+            </section>
+
+            <section class="bg-white p-6 rounded-lg shadow-sm">
+                <h2 class="text-2xl font-bold text-primary mb-4">主要特点</h2>
+                <ul class="space-y-4">
+                    <li class="flex items-start">
+                        <span class="text-accent mr-2">✓</span>
+                        <div>
+                            <strong class="text-primary">免费托管</strong>
+                            <p class="text-gray-600">完全免费的静态网站托管服务，无需支付任何费用。</p>
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-accent mr-2">✓</span>
+                        <div>
+                            <strong class="text-primary">集成 GitHub</strong>
+                            <p class="text-gray-600">与 GitHub 仓库完美集成，推送代码后自动部署更新。</p>
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-accent mr-2">✓</span>
+                        <div>
+                            <strong class="text-primary">HTTPS 安全</strong>
+                            <p class="text-gray-600">自动提供 HTTPS 加密，确保网站安全。</p>
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-accent mr-2">✓</span>
+                        <div>
+                            <strong class="text-primary">自定义域名</strong>
+                            <p class="text-gray-600">支持配置自定义域名，让您的网站更专业。</p>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="bg-white p-6 rounded-lg shadow-sm">
+                <h2 class="text-2xl font-bold text-primary mb-4">如何使用？</h2>
+                <ol class="list-decimal list-inside space-y-4 text-gray-600">
+                    <li>创建一个新的 GitHub 仓库或使用现有仓库</li>
+                    <li>在仓库设置中启用 GitHub Pages</li>
+                    <li>选择部署分支（通常是 main 分支）</li>
+                    <li>添加网站文件到仓库</li>
+                    <li>推送更改后，等待几分钟即可在线访问</li>
+                </ol>
+            </section>
+
+            <section class="bg-white p-6 rounded-lg shadow-sm">
+                <h2 class="text-2xl font-bold text-primary mb-4">使用场景</h2>
+                <div class="grid md:grid-cols-2 gap-4">
+                    <div class="p-4 border border-gray-200 rounded-lg">
+                        <h3 class="font-bold text-primary mb-2">个人博客</h3>
+                        <p class="text-gray-600">创建和维护个人博客，分享知识和经验。</p>
+                    </div>
+                    <div class="p-4 border border-gray-200 rounded-lg">
+                        <h3 class="font-bold text-primary mb-2">项目文档</h3>
+                        <p class="text-gray-600">托管开源项目的文档和使用说明。</p>
+                    </div>
+                    <div class="p-4 border border-gray-200 rounded-lg">
+                        <h3 class="font-bold text-primary mb-2">个人作品集</h3>
+                        <p class="text-gray-600">展示个人项目和作品集。</p>
+                    </div>
+                    <div class="p-4 border border-gray-200 rounded-lg">
+                        <h3 class="font-bold text-primary mb-2">静态网站</h3>
+                        <p class="text-gray-600">托管任何类型的静态网站。</p>
+                    </div>
+                </div>
+            </section>
+        </article>
+    </main>
+
+    <footer class="border-t border-gray-200 mt-12">
+        <div class="container mx-auto px-4 py-8 text-center text-gray-600">
+            <p>&copy; 2024 我的博客. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html> 
